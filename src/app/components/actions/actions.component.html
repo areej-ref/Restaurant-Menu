@@ -1,0 +1,16 @@
+<div class="my-3 px-3 row justify-content-between">
+  <div class="px-2 my-1 col-md-3 col-sm-12 col-12">
+    <button class="primary-bg border-0 w-100" pButton type="button" label="Expand all" (click)="expandAll()"></button>
+  </div>
+  <div class="px-2 my-1 col-md-3 col-sm-12 col-12">
+    <button class="primary-bg border-0 w-100" pButton type="button" label="Collapse all" (click)="collapseAll()"></button>
+  </div>
+  <div class="px-2 my-1 col-md-3 col-sm-12 col-12">
+    <button class="primary-bg border-0 w-100" pButton type="button" label="Add New" (click)="openDialog()"></button>
+  </div>
+  <label class="my-1 col-md-1 col-sm-6 col-6 pt-2">Level</label>
+  <div class="px-2 col-md-2 col-sm-6 col-6 my-1">
+    <p-inputNumber id="level" type="text" inputStyleClass="w-100" pInputText [min]="1"
+                   [showButtons]="true" [(ngModel)]="level" (onInput)="setLevel($event.value)"></p-inputNumber>
+  </div>
+</div>

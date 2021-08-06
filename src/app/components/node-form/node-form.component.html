@@ -1,0 +1,22 @@
+<p-dialog [header]="isEdit? 'Edit Node' : 'Add Node'" [(visible)]="display" [draggable]="true" [style]="{width: '500px'}">
+  <div class="p-field row justify-content-center">
+    <div class="row col-12 my-2">
+      <label for="name" class="col-md-3 col-sm-12 col-12">Name</label>
+      <input id="name" type="text" aria-describedby="name-help" class="ng-invalid ng-dirty col-md-7 col-sm-11 col-11" pInputText [(ngModel)]="name" />
+      <small *ngIf="name===''" id="name-help" class="p-error col-md-2 col-sm-1 col-1">*</small>
+    </div>
+    <div class="row col-12 my-2" *ngIf="!(isParent||isNew)">
+      <label for="url" class="col-md-3 col-sm-12 col-12">URL</label>
+      <input id="url" type="text" aria-describedby="url-help" class="ng-invalid ng-dirty col-md-7 col-sm-11 col-11" pInputText [(ngModel)]="url" />
+      <small *ngIf="url===''" id="url-help" class="p-error col-md-2 col-sm-1 col-1">*</small>
+    </div>
+    <div class="row col-12 my-2" *ngIf="!(isEdit||isNew)">
+      <label class="col-md-3 col-sm-12 col-12">Is Parent</label>
+      <p-inputSwitch class="col-md-3 col-sm-12 col-12" [(ngModel)]="isParent"></p-inputSwitch>
+    </div>
+  </div>
+  <ng-template pTemplate="footer">
+    <p-button icon="pi pi-check" (click)="save()" label="save" styleClass="p-button-text"></p-button>
+    <p-button icon="pi pi-times" (click)="closeDialog()" label="cancel" styleClass="p-button-text"></p-button>
+  </ng-template>
+</p-dialog>

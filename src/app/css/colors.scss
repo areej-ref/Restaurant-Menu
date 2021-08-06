@@ -1,0 +1,59 @@
+@import 'variables';
+
+.primary-text{
+  color: $primary;
+}
+.primary-bg{
+  background-color: $primary !important;
+}
+.secondary-text{
+  color: $secondary;
+}
+.secondary-bg{
+  background-color: $secondary;
+}
+.white-text{
+  color: white;
+}
+.white-bg{
+  background-color: white;
+}
+.grey-text{
+  color: $grey;
+}
+.grey-bg{
+  background-color: $grey;
+}
+.dark-text{
+  color: $dark;
+}
+.dark-bg{
+  background-color: $dark;
+}
+.black-bg {
+  background-color: $black;
+}
+.yellow-text{
+  color: $yellow;
+}
+.light-grey-text{
+  color: $light-grey;
+}
+.light-grey-bg{
+  background-color: $light-grey;
+}
+.dark-bg {
+  background-color: $dark;
+}
+.black-bg{
+  background-color: #000000;
+}
+.red-bg {
+  background-color: $red;
+}
+.red-text {
+  color: $red;
+}
+.info-text {
+  color: $info;
+}

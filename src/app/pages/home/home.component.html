@@ -1,0 +1,27 @@
+<div class="row justify-content-center align-items-center mr-0" [class]="applicationStateService.getIsMobileResolution?'':'page-padding-lg'">
+  <div class="col-md-8 col-sm-10 col-11 my-5 p-5 shadow radius-20 white-bg">
+    <h5 class="font-veto-sans-bold red-text font-26-b text-center mb-4">Restaurant Menu</h5>
+    <app-actions (expand)="expandAll()" (collapse)="collapseAll()" (showDialog)="AddNewNode()" (levelChanged)="setLevel($event)"></app-actions>
+    <h6 class="red-text font-veto-sans-regular font-14 text-center">Press the right button to display node's action</h6>
+    <p-tree class="row font-veto-sans-medium secondary-text font-20 w-100 bg"
+            [value]="nodes"
+            [draggableNodes]="true"
+            [droppableNodes]="true"
+            [(selection)]="selectedNode"
+            [contextMenu]="cm"
+            (onNodeExpand)="expandNode($event)"
+            selectionMode="single"
+            draggableScope="self"
+            droppableScope="self">
+      <ng-template let-node pTemplate="url">
+        <a [href]="node.data">{{node.label}}</a>
+      </ng-template>
+      <ng-template let-node pTemplate="default">
+        <b>{{node.label}}</b>
+      </ng-template>
+    </p-tree>
+    <p-contextMenu #cm [model]="items"></p-contextMenu>
+  </div>
+  <app-node-form [node]="selectedNode" [display]="displayForm" [isNew]="isAddNew" [isEdit]="isEdit" (close)="closeDialog()" (input)="saveNode($event)"></app-node-form>
+  <p-confirmDialog [style]="{width: '500px'}" [baseZIndex]="10000"></p-confirmDialog>
+</div>

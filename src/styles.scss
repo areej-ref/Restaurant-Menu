@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/css/colors.scss';
+@import './app/css/fonts.scss';
+
+body {
+  background-image: url("assets/images/bg-img.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.page-padding {
+  padding: 0 5%;
+}
+.page-padding-lg {
+  padding: 2% 10%;
+}
+.w-100{
+  width: 100%
+}
+.radius-20{
+  border-radius: 20px;
+}

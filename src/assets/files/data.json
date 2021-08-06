@@ -1,0 +1,95 @@
+{
+  "data": [
+    {
+      "key": "0",
+      "label": "Dinner",
+      "expandedIcon": "pi pi-folder-open",
+      "collapsedIcon": "pi pi-folder",
+      "children": [
+        {
+          "key": "0-0",
+          "label": "Classic",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder",
+          "children": [
+            {
+              "key": "0-0-0",
+              "label": "Chicken",
+              "expandedIcon": "pi pi-folder-open",
+              "collapsedIcon": "pi pi-folder",
+              "children": [
+                {
+                  "key": "0-0-0-0",
+                  "label": "Chicken Crispers",
+                  "icon": "pi pi-heart",
+                  "data": "https://www.chilis.com/menu/chicken-crispers/original-chicken-crispers",
+                  "type": "url"
+                },
+                {
+                  "key": "0-0-0-1",
+                  "label": "Cajun Chicken Pasta",
+                  "icon": "pi pi-heart",
+                  "data": "https://www.chilis.com/menu/chicken-seafood/cajun-chicken-pasta",
+                  "type": "url"
+                }
+              ]
+            },
+            {
+              "key": "0-0-1",
+              "label": "Salad",
+              "expandedIcon": "pi pi-folder-open",
+              "collapsedIcon": "pi pi-folder",
+              "children": [
+                {
+                  "key": "0-0-1-0",
+                  "label": "Side Caesar Salad",
+                  "icon": "pi pi-heart",
+                  "data": "https://www.chilis.com/menu/salads-soups-chili/side-caesar-salad",
+                  "type": "url"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "0-1",
+          "label": "Favorite",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder",
+          "children": [
+            {
+              "key": "0-1-0",
+              "label": "Cheese Burger",
+              "icon": "pi pi-heart",
+              "data": "https://www.chilis.com/menu/kids-menu/pepper-pals-cheese-burger-bites",
+              "type": "url"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "1",
+      "label": "Drink",
+      "expandedIcon": "pi pi-folder-open",
+      "collapsedIcon": "pi pi-folder",
+      "children": [
+        {
+          "key": "1-0",
+          "label": "Cold",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder",
+          "children": [
+            {
+              "key": "1-0-0",
+              "label": "Beverages",
+              "icon": "pi pi-heart",
+              "data": "https://www.chilis.com/menu/beverages",
+              "type": "url"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
